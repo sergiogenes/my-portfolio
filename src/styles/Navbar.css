@@ -1,7 +1,7 @@
 .App-header {
   background-color: var(--color-rojo);
   width: 100%;
-  height: 7rem;
+  height: 70px;
   position: sticky;
   top: 0;
   display: flex;
@@ -14,14 +14,32 @@
 .App-header nav {
   height: 100%;
   width: 100%;
+  padding: 0 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.App-header nav a h1 {
+  font-family: "Galada", cursive;
+  font-size: 3.5rem;
+}
+
+.menu-icon {
+  height: 32px;
+  width: 32px;
+  background-color: transparent;
+  background-image: url("/public/menu.svg");
+  background-size: cover;
+  background-position: center;
+  display: none;
+  border: none;
 }
 
 .App-header a {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   text-decoration: none;
 }
@@ -29,7 +47,8 @@
 .App-header a img {
   width: 80px;
   height: auto;
-  fill: #ffffff;
+  fill: "#000000";
+  stroke: "#fff";
 }
 
 .App-header ul {
@@ -46,4 +65,49 @@
 .App-header ul li :hover {
   text-decoration: underline #fff;
   cursor: pointer;
+}
+
+.App-header nav ul li a {
+  font-size: 2.2rem;
+}
+
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 80px;
+  width: 300px;
+  height: 0px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  list-style: none;
+}
+
+.dropdown_menu.open {
+  height: 100px;
+}
+
+@media (max-width: 750px) {
+  .App-header nav {
+    justify-content: space-between;
+  }
+  .menu-icon {
+    height: 32px;
+    width: 32px;
+    display: flex;
+  }
+
+  .App-header ul {
+    display: none;
+  }
+  .dropdown_menu {
+    display: block;
+  }
 }

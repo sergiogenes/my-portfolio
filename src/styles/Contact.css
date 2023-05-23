@@ -35,3 +35,12 @@
   transform: translateY(0.5rem) scale(1.05);
   filter: none;
 }
+
+@media (max-width: 750px) {
+  #contact div h2 {
+    font-size: 4rem;
+  }
+  #contact-links ul {
+    flex-direction: column;
+  }
+}

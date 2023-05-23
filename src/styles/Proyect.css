@@ -1,0 +1,83 @@
+#projects {
+  background-color: var(--color-azul);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  scroll-margin-top: 100px;
+}
+#projects h2 {
+  margin-top: 10rem;
+  border-bottom: 2px solid var(--color-blanco);
+  font-family: Raleway, sans-serif;
+  font-size: 4.2rem;
+  text-shadow: 3px 3px 3px var(--color-gris);
+}
+.container-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 10rem 20rem 5rem;
+  gap: 3rem;
+}
+.container-projects a {
+  text-decoration: none;
+  box-shadow: 3px 3px 3px var(--color-gris);
+  transition: all 1s;
+}
+.container-projects a:hover {
+  transform: translateY(0.5rem) scale(1.05);
+  box-shadow: 5px 5px 5px var(--color-gris);
+}
+
+.container-projects a:hover figcaption::before {
+  content: "<  ";
+  color: var(--color-naranja);
+  font-size: 1.4em;
+}
+
+.container-projects a:hover figcaption::after {
+  content: "  />";
+  color: var(--color-naranja);
+  font-size: 1.4em;
+}
+
+.container-projects a figure img {
+  max-width: 100%;
+  background-size: cover;
+}
+.container-projects a figure {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+}
+.container-projects a figcaption {
+  background-color: var(--color-gris);
+  padding-top: 1.5rem;
+  font-size: 0.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  text-align: center;
+}
+#projects button {
+  margin: 5rem auto;
+  width: 15rem;
+  height: 5rem;
+  background-color: var(--color-gris);
+  border: none;
+  box-shadow: 2px 2px 2px var(--color-gris);
+  transition: all 1s;
+}
+#projects button:hover {
+  background-color: var(--color-rojo);
+}
+
+#projects button a {
+  font-family: poppins, sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+}

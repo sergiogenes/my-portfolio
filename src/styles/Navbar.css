@@ -1,0 +1,49 @@
+.App-header {
+  background-color: var(--color-rojo);
+  width: 100%;
+  height: 7rem;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  box-shadow: 2px 2px 2px var(--color-gris);
+}
+
+.App-header nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.App-header a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.App-header a img {
+  width: 80px;
+  height: auto;
+  fill: #ffffff;
+}
+
+.App-header ul {
+  display: flex;
+  list-style: none;
+  gap: 5%;
+  margin-right: 2%;
+}
+
+.App-header ul li {
+  width: 150px;
+}
+
+.App-header ul li :hover {
+  text-decoration: underline #fff;
+  cursor: pointer;
+}

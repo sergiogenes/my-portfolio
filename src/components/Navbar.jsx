@@ -1,63 +1,77 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react'
 
-import "../styles/Navbar.css";
+import '../styles/Navbar.css'
 
 const Navbar = () => {
-  const [menu, setMenu] = useState(true);
-  let dropdown_menu;
-  let icon;
+  const [menu, setMenu] = useState(true)
+  const [dropdownMenu, setDropdownMenu] = useState('')
+  const [icon, setIcon] = useState('')
 
   useEffect(() => {
-    dropdown_menu = document.querySelector(".dropdown_menu");
-    icon = document.querySelector(".menu-icon");
-  }, [menu]);
+    setDropdownMenu(document.querySelector('.dropdownMenu'))
+    setIcon(document.querySelector('.menuIcon'))
+  }, [menu])
 
   const menuHandler = (e) => {
-    setMenu(!menu);
+    setMenu(!menu)
     menu
-      ? (icon.style.backgroundImage = "url(close.svg)")
-      : (icon.style.backgroundImage = "url(menu.svg)");
-    dropdown_menu.classList.toggle("open");
-  };
+      ? (icon.style.backgroundImage = 'url(close.svg)')
+      : (icon.style.backgroundImage = 'url(menu.svg)')
+    dropdownMenu.classList.toggle('open')
+  }
 
-  console.dir(icon);
   return (
-    <header className="App-header">
+    <header className='appHeader'>
       <nav>
-        <a href="#">
-          <img src="slg-logo.svg" alt="Logo de Sergio Genes" />
+        <a href='#welcome-section'>
+          <img
+            src='slg-logo.svg'
+            alt='Logo de Sergio Genes'
+          />
           <h1>Sergio L Genes</h1>
         </a>
         <ul>
           <li>
-            <a href="#">Acerca de mí</a>
+            <a href='#about'>Acerca de mí</a>
           </li>
           <li>
-            <a href="#projects">Proyectos</a>
+            <a href='#projects'>Proyectos</a>
           </li>
           <li>
-            <a href="#contact">Contacto</a>
+            <a href='#contact'>Contacto</a>
           </li>
         </ul>
-        <button className="menu-icon" onClick={menuHandler} />
-        <div className="dropdown_menu">
+        <button
+          className='menuIcon'
+          onClick={menuHandler}
+        />
+        <div className='dropdownMenu'>
           <li onClick={menuHandler}>
-            <a href="#">Acerca de mí</a>
+            <a href='#home'>Home</a>
+          </li>
+          <li onClick={menuHandler}>
+            <a href='#about'>Acerca de mí</a>
           </li>
           <li>
-            <a onClick={menuHandler} href="#projects">
+            <a
+              onClick={menuHandler}
+              href='#projects'
+            >
               Proyectos
             </a>
           </li>
           <li>
-            <a onClick={menuHandler} href="#contact">
+            <a
+              onClick={menuHandler}
+              href='#contact'
+            >
               Contacto
             </a>
           </li>
         </div>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

@@ -1,0 +1,41 @@
+.project-title {
+  text-decoration: none;
+  box-shadow: 3px 3px 3px var(--color-gris);
+  transition: all 1s;
+}
+.project-title:hover {
+  transform: translateY(0.5rem) scale(1.05);
+  box-shadow: 5px 5px 5px var(--color-gris);
+}
+
+.project-title:hover figcaption::before {
+  content: "<  ";
+  color: var(--color-naranja);
+  font-size: 1.4em;
+}
+
+.project-title:hover figcaption::after {
+  content: "  />";
+  color: var(--color-naranja);
+  font-size: 1.4em;
+}
+
+.project-title figure img {
+  width: 100%;
+  min-height: 100%;
+}
+.project-title figure {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+}
+.project-title figcaption {
+  background-color: var(--color-gris);
+  min-height: 6rem;
+  padding-top: 1.5rem;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  text-align: center;
+}

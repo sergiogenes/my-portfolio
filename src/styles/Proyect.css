@@ -34,20 +34,20 @@
 }
 
 .container-projects a:hover figcaption::before {
-  content: "<  ";
+  content: '<  ';
   color: var(--color-naranja);
   font-size: 1.4em;
 }
 
 .container-projects a:hover figcaption::after {
-  content: "  />";
+  content: '  />';
   color: var(--color-naranja);
   font-size: 1.4em;
 }
 
 .container-projects a figure img {
-  max-width: 100%;
-  background-size: cover;
+  width: 100%;
+  min-height: 100%;
 }
 .container-projects a figure {
   display: grid;
@@ -55,8 +55,9 @@
 }
 .container-projects a figcaption {
   background-color: var(--color-gris);
+  min-height: 6rem;
   padding-top: 1.5rem;
-  font-size: 0.6em;
+  font-size: 1em;
   display: flex;
   justify-content: center;
   align-items: center;

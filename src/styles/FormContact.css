@@ -1,0 +1,38 @@
+.formContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+}
+.formContainer form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formContainer form label {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.formContainer form input {
+  background-color: #333333;
+  padding: 4px 6px;
+  border-radius: 1rem;
+}
+.formContainer form textarea {
+  background-color: #333333;
+  padding: 4px 6px;
+  border-radius: 1rem;
+  border-width: 2px;
+  border-style: inset;
+}
+.formContainer form button {
+  background-color: #333333;
+  padding: 10px 16px;
+  border-radius: 1rem;
+  outline: none;
+  width: 100%;
+  font-weight: bold;
+}

@@ -1,12 +1,12 @@
-import "../styles/Home.css";
+import '../styles/Home.css'
 
 const Home = () => {
   return (
-    <section id="welcome-section">
-      <h1>Hey I am Sergio</h1>
-      <p>a web developer</p>
+    <section id='welcome-section'>
+      <h1>Hola, soy Sergio Genes</h1>
+      <p>un full stack developer</p>
     </section>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

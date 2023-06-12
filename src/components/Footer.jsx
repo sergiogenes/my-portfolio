@@ -1,21 +1,17 @@
-import "../styles/Footer.css";
+import '../styles/Footer.css'
 
 const Footer = () => {
   return (
     <footer>
       <p>
-        **This is just a fake portfolio. All the projects and contact details
-        given are not real.
+        © Creado por <i>Sergio Leopoldo Genes</i>
       </p>
-      <p>
-        © Created for
-        <a href="https://www.freecodecamp.org" target="_blank">
-          freeCodeCamp
-        </a>
-        <i className="fab fa-free-code-camp"></i>
-      </p>
+      <img
+        src='slg-logo.svg'
+        alt='Logo de Sergio Genes'
+      />
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

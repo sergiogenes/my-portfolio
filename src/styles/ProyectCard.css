@@ -9,7 +9,7 @@
 }
 
 .projectCardContainer:hover {
-  scale: 1.05;
+  scale: 1.02;
 }
 .projectCardContainer figure {
   position: relative;
@@ -27,8 +27,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
+  /*   bottom: 0;
+  left: 0; */
   display: flex;
   margin: 3px;
 }
@@ -55,6 +55,10 @@
 
 .projectCardContainer figure figcaption {
   margin-top: 3rem;
+}
+
+.projectCardContainer figure figcaption p {
+  white-space: pre-line;
 }
 
 .projectCardContainer .tagsContainer {

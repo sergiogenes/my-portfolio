@@ -16,9 +16,9 @@
 }
 .container-projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 90%;
   padding: 10rem 20rem 5rem;
   gap: 3rem;

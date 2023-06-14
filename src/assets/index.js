@@ -8,6 +8,10 @@ import javascript from './javascript.png'
 import nodejs from './nodejs.png'
 import reactjs from './reactjs.png'
 import redux from './redux.png'
+import performanceFeedbackFronent from './Projects/Performance Feedback - Frontend.png'
+import performanceFeedbackBackend from './Projects/Performance Feedback - Backend.png'
+import devGamesFrontend from './Projects/devGames-Frontend.png'
+import devGamesBackend from './Projects/devGames - Backend.png'
 
 export {
   css,
@@ -19,5 +23,9 @@ export {
   javascript,
   nodejs,
   reactjs,
-  redux
+  redux,
+  performanceFeedbackFronent,
+  performanceFeedbackBackend,
+  devGamesFrontend,
+  devGamesBackend
 }

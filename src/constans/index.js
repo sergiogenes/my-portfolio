@@ -8,7 +8,11 @@ import {
   git,
   github,
   figma,
-  docker
+  docker,
+  performanceFeedbackFronent,
+  performanceFeedbackBackend,
+  devGamesFrontend,
+  devGamesBackend
 } from '../assets/'
 
 const navLinks = [
@@ -125,15 +129,15 @@ const projects = [
         color: 'blue-text-gradient'
       }
     ],
-    image:
-      'https://github.com/sergiogenes/Proyecto_images/blob/main/Proyecto_1.png?raw=true',
-    source_code_link: 'https://github.com/ecommerce-devgames/Frontend',
-    app_link: 'https://vercel.com/devgames/frontend '
+    image: devGamesFrontend,
+    source_code_link:
+      'https://github.com/ecommerce-devgames/Frontend/tree/master',
+    app_link: 'https://frontend-omega-gules.vercel.app/'
   },
   {
     name: 'DevGames3 - Backend',
     description:
-      'Backend de un e-commerce dedicado a la venta de videos juegos.\n En el backend, se utilizó Node.js con Express como el framework principal. La base de datos está impulsada por PostgreSQL, y se utilizó Sequelize como ORM para interactuar con la base de datos. Se implementó la autenticación y autorización utilizando JWT, y Bcrypt para el cifrado de contraseñas. Además, se incorporó a Nodemailer para enviar correos electrónicos con los detalles de las compras de los usuarios.\n Para llevar a cabo el proyecto  se ha diseñado cuidadosamente el schema design de los modelos de bases de datos y sus relaciones. Esto nos permite ofrecer todas las funcionalidades clave de la aplicación. Hemos creado una estructura sólida que almacena información vital, como detalles de juegos, usuarios, carritos de compras y registros de compras anteriores.\nPara garantizar la seguridad y la confidencialidad de los datos, se ha implementado variables de entorno en el proyecto. Esto nos ha permitido separar y proteger las variables sensibles, como las credenciales de acceso a la base de datos. Además, al utilizar variables de entorno, hemos facilitado enormemente el proceso de deploy del proyecto, ya que podemos gestionar y modificar estas variables de manera rápida y sencilla sin tener que tocar el código fuente.\nSe ha elegido Vercel como plataforma de deploy para nuestro proyecto. Vercel nos brinda una forma rápida y sencilla de implementar nuestra aplicación en la nube. Con Vercel, se ha podido desplegar nuestro backend de manera eficiente y asegurarnos de que nuestro proyecto esté disponible en todo momento.',
+      'Backend de un e-commerce dedicado a la venta de videos juegos.\n En el backend, se utilizó Node.js con Express como el framework principal. La base de datos está impulsada por PostgreSQL y Sequelize como ORM para interactuar con la base de datos.\n Se implementó la autenticación y autorización utilizando JWT, y Bcrypt para el cifrado de contraseñas. Además, se incorporó a Nodemailer para enviar correos electrónicos con los detalles de las compras de los usuarios.\n Para llevar a cabo el proyecto  se ha diseñado cuidadosamente el schema design de los modelos de bases de datos y sus relaciones. Esto nos permite ofrecer todas las funcionalidades clave de la aplicación. Hemos creado una estructura sólida que almacena información vital, como detalles de juegos, usuarios, carritos de compras y registros de compras anteriores.\nPara garantizar la seguridad y la confidencialidad de los datos, se ha implementado variables de entorno en el proyecto. Esto nos ha permitido separar y proteger las variables sensibles, como las credenciales de acceso a la base de datos. Además, al utilizar variables de entorno, hemos facilitado enormemente el proceso de deploy del proyecto, ya que podemos gestionar y modificar estas variables de manera rápida y sencilla sin tener que tocar el código fuente.\nSe ha elegido Vercel como plataforma de deploy para nuestro proyecto. Vercel nos brinda una forma rápida y sencilla de implementar nuestra aplicación en la nube. Con Vercel, se ha podido desplegar nuestro backend de manera eficiente y asegurarnos de que nuestro proyecto esté disponible en todo momento.',
     tags: [
       {
         name: 'Express',
@@ -156,9 +160,9 @@ const projects = [
         color: 'blue-text-gradient'
       }
     ],
-    image:
-      'https://github.com/sergiogenes/Proyecto_images/blob/main/Proyecto_1.png?raw=true',
-    source_code_link: 'https://github.com/ecommerce-devgames/Frontend',
+    image: devGamesBackend,
+    source_code_link:
+      'https://github.com/ecommerce-devgames/Backend/tree/master',
     app_link: 'https://frontend-omega-gules.vercel.app/'
   },
   {
@@ -183,8 +187,7 @@ const projects = [
         color: 'blue-text-gradient'
       }
     ],
-    image:
-      'https://github.com/sergiogenes/Proyecto_images/blob/main/Proyecto_1.png?raw=true',
+    image: performanceFeedbackFronent,
     source_code_link:
       'https://github.com/sergiogenes/PerformanceFeedbackClient/tree/main',
     app_link: 'https://performance-feedback-client.vercel.app/'
@@ -211,8 +214,7 @@ const projects = [
         color: 'blue-text-gradient'
       }
     ],
-    image:
-      'https://github.com/sergiogenes/Proyecto_images/blob/main/Proyecto_1.png?raw=true',
+    image: performanceFeedbackBackend,
     source_code_link:
       'https://github.com/sergiogenes/PerformanceFeedbackServer/tree/main',
     app_link: 'https://performance-feedback-server.vercel.app/'

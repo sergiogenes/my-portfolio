@@ -1,6 +1,6 @@
-import '../styles/Timeline.css'
-import TimeLineCard from '../commons/TimeLineCard'
-import { aboutMe } from '../constans'
+import './Timeline.css'
+import TimeLineCard from './TimeLineCard'
+import { aboutMe } from '../../constans'
 
 const Timeline = () => {
   return (

@@ -1,11 +1,26 @@
-import '../styles/Proyect.css'
-import ProjectCard from '../commons/ProyectCard'
-import { projects } from '../constans'
+import './Proyect.css'
+import ProjectCard from './ProyectCard'
+import AnimatedLetters from '../AnimatedLetters'
+
+import { projects } from '../../constans'
+import { useEffect, useState } from 'react'
 
 const Proyect = () => {
+  const [letterClass, setLetterClass] = useState('text-animate')
+
+  useEffect(() => {
+    setTimeout(() => setLetterClass('text-animate-hover'), 4000)
+  }, [])
+
   return (
     <section id='projects'>
-      <h2>Estos son algunos de mis proyectos...</h2>
+      <h2>
+        <AnimatedLetters
+          letterClass={letterClass}
+          strArray={'Estos son algunos de mis proyectos ...'.split('')}
+          idx={5}
+        />
+      </h2>
       <div className='container-projects'>
         {projects.map((project, index) => (
           <ProjectCard

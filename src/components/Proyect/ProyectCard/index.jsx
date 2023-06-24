@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../styles/ProyectCard.css'
+import './ProyectCard.css'
 import { IconLink } from '@tabler/icons-react'
 
 const ProjectCard = ({
@@ -16,7 +16,7 @@ const ProjectCard = ({
     console.log('click')
     return setMoreText(!moreText)
   }
-  console.log('moreText', moreText, handlerMoreText)
+
   return (
     <div className='projectCardContainer'>
       <figure>
@@ -43,7 +43,10 @@ const ProjectCard = ({
               ? description.slice(0, 300).concat('...')
               : description}
           </p>
-          <button onClick={handlerMoreText}>
+          <button
+            className='viewMoreBtn'
+            onClick={handlerMoreText}
+          >
             {moreText ? 'Mostrar menos...' : 'Mostrar mas...'}
           </button>
           <div className='tagsContainer'>

@@ -8,7 +8,7 @@
   justify-content: space-around;
   align-items: center;
   z-index: 1;
-  box-shadow: 2px 2px 2px var(--color-gris);
+  box-shadow: 4px 4px 8px var(--color-blanco);
 }
 
 .appHeader nav {
@@ -63,8 +63,9 @@
 }
 
 .appHeader ul li :hover {
-  text-decoration: underline #fff;
+  transform: scale(1.1);
   cursor: pointer;
+  transition: all 1s;
 }
 
 .appHeader nav ul li a {

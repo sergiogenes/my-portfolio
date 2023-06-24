@@ -1,7 +1,7 @@
 /* Card container */
 .timeLineCard {
   position: relative;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 /* setting padding based on even or odd */
@@ -16,14 +16,15 @@
   content: '';
   position: absolute;
   width: 50%;
-  border: solid var(--color-rojo);
+  border-color: #d9daa0;
+  border-style: ridge;
 }
 
 /* Setting the border of top, bottom, left */
 .timeLineCard:nth-child(odd)::before {
   left: 0px;
   top: -4.5px;
-  bottom: -4.5px;
+  bottom: -5px;
   border-width: 5px 0 5px 5px;
   border-radius: 50px 0 0 50px;
 }
@@ -63,11 +64,15 @@
   color: gray;
   border-radius: 10px;
   padding: 10px;
+  box-shadow: 4px 4px 8px black;
 }
 
 /* Title of the card */
 .timeLineCard .title {
-  color: var(--color-rojo);
+  font-size: 2.5rem;
+  padding: 2% 0;
+  color: var(-color-blanco);
+  text-shadow: 4px 4px 8px black;
   position: relative;
 }
 
@@ -75,24 +80,30 @@
 .timeLineCard .title::before {
   content: '';
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background: white;
+  width: 15px;
+  height: 15px;
+  background: var(--color-blanco);
   border-radius: 999px;
   border: 3px solid var(--color-rojo);
+}
+
+/* Description of the card */
+.timeLineCard .info p {
+  text-shadow: 2px 2px 4px black;
 }
 
 /* text right if the card is even  */
 .timeLineCard:nth-child(even) > .info > .title {
   text-align: right;
+  line-height: 5rem;
 }
 
 /* setting dot to the left if the card is odd */
 .timeLineCard:nth-child(odd) > .info > .title::before {
-  left: -45px;
+  left: -48px;
 }
 
 /* setting dot to the right if the card is odd */
 .timeLineCard:nth-child(even) > .info > .title::before {
-  right: -45px;
+  right: -48px;
 }

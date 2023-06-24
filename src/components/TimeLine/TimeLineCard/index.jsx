@@ -1,4 +1,4 @@
-import '../styles/TimeLineCard.css'
+import './TimeLineCard.css'
 
 const TimeLineCard = ({ title, description }) => {
   return (

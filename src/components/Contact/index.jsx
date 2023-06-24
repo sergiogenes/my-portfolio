@@ -1,10 +1,11 @@
-import '../styles/Contact.css'
+import './Contact.css'
 import {
   IconBrandLinkedin,
   IconBrandGithub,
   IconMailFast
 } from '@tabler/icons-react'
-import FormContact from './FormContact'
+import FormContact from '../FormContact'
+import Cube from '../Cube'
 
 const Contact = () => {
   return (
@@ -13,7 +14,10 @@ const Contact = () => {
         <h2>Trabajemos juntos...</h2>
         <p>Como me puedes contactar?</p>
       </div>
-      <FormContact />
+      <div className='form-wrapper'>
+        <FormContact />
+        <Cube />
+      </div>
       <div id='contact-links'>
         <ul>
           <li>

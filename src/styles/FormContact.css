@@ -4,6 +4,11 @@
   flex-direction: column;
   gap: 10px;
   overflow: hidden;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: hsl(217.5, 25%, 15%);
+  box-shadow: 0.5rem 0.5rem 1rem hsl(0, 0%, 30%),
+    -0.5rem -0.5rem 1rem hsl(0, 0%, 10%);
 }
 .formContainer form {
   width: 100%;

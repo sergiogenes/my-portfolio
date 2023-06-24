@@ -1,0 +1,100 @@
+.projectCardContainer {
+  background-color: #333;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem hsl(0, 0%, 30%),
+    -0.5rem -0.5rem 1rem hsl(0, 0%, 10%);
+  padding: 2rem;
+  width: auto;
+  transition: 1s;
+  object-fit: fill;
+}
+
+.projectCardContainer:hover {
+  box-shadow: inset 0.2rem 0.2rem 1rem hsl(0, 0%, 10%),
+    inset -0.2rem -0.2rem 1rem hsl(0, 0%, 30%);
+}
+.projectCardContainer figure {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.projectCardContainer figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.clickContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /*   bottom: 0;
+  left: 0; */
+  display: flex;
+  margin: 3px;
+}
+
+.clickContainer div {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  background-image: linear-gradient(#888888, #000000);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clickContainer div img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.projectCardContainer figure figcaption {
+  margin-top: 3rem;
+}
+
+.projectCardContainer figure figcaption p {
+  white-space: pre-line;
+  line-height: 3rem;
+  margin-top: 3rem;
+}
+
+.projectCardContainer .viewMoreBtn {
+  white-space: pre-line;
+  line-height: 3rem;
+  margin-top: 3rem;
+}
+
+.projectCardContainer button {
+  background-color: transparent;
+  font-weight: 900;
+  color: var(--color-blanco);
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  border: 2px solid hsl(0, 0%, 20%);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 1s ease;
+  box-shadow: 0.5rem 0.5rem 1rem hsl(0, 0%, 10%),
+    -0.5rem -0.5rem 1rem hsl(0, 0%, 30%);
+}
+
+.projectCardContainer button:hover {
+  box-shadow: 0.5rem 0.5rem 1rem hsl(0, 0%, 30%),
+    -0.5rem -0.5rem 1rem hsl(0, 0%, 10%);
+}
+
+.projectCardContainer button:active {
+  box-shadow: inset 0.2rem 0.2rem 1rem hsl(0, 0%, 10%),
+    inset -0.2rem -0.2rem 1rem hsl(0, 0%, 30%);
+}
+
+.projectCardContainer .tagsContainer {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

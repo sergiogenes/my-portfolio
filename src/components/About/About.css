@@ -8,11 +8,17 @@
   padding: 15vh 0px 5vh;
   display: flex;
   justify-content: center;
-  font-size: 4rem;
+  font-family: 'Galada', cursive;
+  font-size: 5rem;
+  text-shadow: 4px 4px 7px black;
 }
 #about .about_container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+}
+
+#about .about_container::before {
+  content: '';
+  background-image: url('../../../public/programmer.png');
 }
 #about_text {
   display: flex;
@@ -38,7 +44,7 @@
 @media (max-width: 900px) {
   #about {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   #about_text {

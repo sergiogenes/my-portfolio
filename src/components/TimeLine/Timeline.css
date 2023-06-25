@@ -1,9 +1,3 @@
-:root {
-  --primary-color: #090909;
-  --background-color: #111;
-  --font: sans-serif;
-}
-
 /* Timeline Container */
 .timeline {
   background: var(--color-rojo);

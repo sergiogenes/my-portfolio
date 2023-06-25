@@ -6,10 +6,10 @@
   gap: 2rem;
   align-items: center;
   color: var(--color-blanco);
-  min-height: 90vh;
+  min-height: 85vh;
   padding-top: 5%;
   border-bottom: 0.5rem solid var(--color-rojo);
-  scroll-margin-top: 10vh;
+  scroll-margin-top: 6vh;
 }
 #contact div h2 {
   font-family: 'Galada', cursive;
@@ -21,7 +21,7 @@
   font-size: 2rem;
   text-shadow: 4px 4px 7px black;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 #contact-links {
   margin-bottom: 2%;
@@ -56,11 +56,11 @@
 #contact .form-wrapper {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  justify-content: center;
+  place-items: center;
   width: 90%;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   #contact div h2 {
     font-size: 4rem;
   }

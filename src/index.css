@@ -29,6 +29,11 @@ body {
 .root {
   width: 100%;
 }
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
 
 @media (max-width: 750px) {
   html {
@@ -36,9 +41,9 @@ body {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 500px) {
   html {
-    font-size: 50%;
+    font-size: 25%;
   }
 }
 

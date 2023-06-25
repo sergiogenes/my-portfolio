@@ -36,8 +36,8 @@
 }
 
 .clickContainer div {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   cursor: pointer;
   background-image: linear-gradient(#888888, #000000);
   border-radius: 50%;
@@ -72,7 +72,7 @@
   background-color: transparent;
   font-weight: 900;
   color: var(--color-blanco);
-  font-size: 1rem;
+  font-size: 1.4rem;
   padding: 1rem 1.5rem;
   border: 2px solid hsl(0, 0%, 20%);
   border-radius: 0.5rem;
@@ -93,6 +93,7 @@
 }
 
 .projectCardContainer .tagsContainer {
+  font-size: 1.5rem;
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;

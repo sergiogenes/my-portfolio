@@ -21,7 +21,7 @@ const Home = () => {
       <p>
         <AnimatedLetters
           letterClass={letterClass}
-          strArray={'un full stack developer'.split('')}
+          strArray={'full stack developer'.split('')}
           idx={25}
         />
       </p>

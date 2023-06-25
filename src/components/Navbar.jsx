@@ -47,7 +47,7 @@ const Navbar = () => {
         />
         <div className='dropdownMenu'>
           <li onClick={menuHandler}>
-            <a href='#home'>Home</a>
+            <a href='#welcome-section'>Home</a>
           </li>
           <li onClick={menuHandler}>
             <a href='#about'>Acerca de mí</a>

@@ -21,7 +21,7 @@
 
 .projectCardContainer figure img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 430/214;
   border-radius: 1rem;
 }
 
@@ -29,8 +29,6 @@
   position: absolute;
   top: 0;
   right: 0;
-  /*   bottom: 0;
-  left: 0; */
   display: flex;
   margin: 3px;
 }
@@ -98,4 +96,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+}
+
+@media (max-width: 500px) {
+  .clickContainer div {
+    width: 6rem;
+    height: 6rem;
+  }
 }

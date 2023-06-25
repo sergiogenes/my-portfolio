@@ -39,8 +39,8 @@ const ProjectCard = ({
         <figcaption>
           <h3>{name}</h3>
           <p>
-            {description.length > 300 && !moreText
-              ? description.slice(0, 300).concat('...')
+            {description.length > 295 && !moreText
+              ? description.slice(0, 295).concat('...')
               : description}
           </p>
           <button

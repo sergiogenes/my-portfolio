@@ -33,7 +33,7 @@
 .timeLineCard:nth-child(even)::before {
   right: 0;
   top: 0;
-  bottom: 0.5px;
+  bottom: 0px;
   border-width: 5px 5px 5px 0;
   border-radius: 0 50px 50px 0;
 }

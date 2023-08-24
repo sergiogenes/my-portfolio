@@ -85,7 +85,7 @@ const aboutMe = [
       'Mi primer contacto con la programación fue a la edad de 10 años, cuando comencé a experimentar con un lenguaje de dibujo llamado LOGO en antiguas computadoras como el Comodore 64. Recuerdo la emoción que sentí cuando escribí mi primer "Hello World!!" en Basic y descubrí todo lo que podía crear con solo unas líneas de código.'
   },
   {
-    title: 'Durante la secuandaría...',
+    title: 'Durante la secundaria...',
     content:
       'Durante la secundaria, me alejé un poco de la programación para dedicarme a otra de mis pasiones, las matemáticas. Participé en las Olimpiadas Matemáticas Argentinas, donde pude conocer a muchas personas apasionadas y desarrollar habilidades como la perseverancia y la resolución de problemas. Sin embargo, nunca dejé de lado mi interés por la programación.'
   },

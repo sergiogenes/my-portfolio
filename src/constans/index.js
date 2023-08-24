@@ -77,7 +77,7 @@ const aboutMe = [
   {
     title: '¡Hola! Mi nombre es Sergio Genes',
     content:
-      'Un ingeniero electrónico con pasión por el mundo IT, reinventandose como full stack developer en JavaScript.'
+      'Un ingeniero electrónico con pasión por el mundo IT, reinventándose como full stack developer en JavaScript.'
   },
   {
     title: 'Cuando era un niño...',
